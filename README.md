@@ -27,3 +27,8 @@ export AWS_DEFAULT_REGION="aws region you wish to deploy the cluster to"
   - Runs the application to migrate images from legacy-s3 to production-s3
   - Exits on completion
 
+## Access control 
+
+- IAM role associated with the Lambda function would be restricted with Read and Write access to legacy and production S3 buckets respectively.
+- Buckets would have a public access denied by default on them.
+
